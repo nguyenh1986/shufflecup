@@ -6,23 +6,23 @@ let stopWatch;
 const timeoutSeconds = 8;
 
 const playWithTimeout = function() {
-    // for stop watch
+   
     const countDownTime = new Date();
     countDownTime.setSeconds(countDownTime.getSeconds() + timeoutSeconds)
     stopWatch = setInterval(function() {
-        // Get today's date and time
+       
         var now = new Date().getTime();
       
-        // Find the distance between now and the count down date
+        
         var distance = countDownTime - now;
       
-        // Time calculations for days, hours, minutes and seconds
+      
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
       
-        // Display the result in the element with id="demo"
+      
         document.getElementById("stopWatch").innerHTML = "Time left: " + seconds + " seconds ";
         
-        // If the count down is finished, write some text
+       
         if (distance < 0) {
             clearInterval(stopWatch);
 
