@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Where The Ball Is</title>
+    <link rel= "stylesheet" href="style.css">
+   <style>
+       body{
+       background-color:powderblue;
+       }
+   </style>
+</head>
+<body>
+    <div class="container">
+
+     <h1> GUESS WHERE THE BALL IS</h1>
+     <div id="stopWatch"></div>
+     <div id="message"></div>
+    <p id="findBall"></p>
+    <div id="original-ball-div">
+        <p id="orangeBall"></p>
+    </div>
+    
+    <div id="container">
+        <div class = "cup" id="cup-1" onclick="guess(this)"></div>
+        <div class = "cup" id="cup-2" onclick="guess(this)"></div>
+        <div class = "cup" id="cup-3" onclick="guess(this)"></div>
+        </div>
+        <div id="re">
+            <button id = "play" onclick="playWithTimeout()">Play</button>
+            <button id="reset" onclick="reset()">Reset</button>
+        </div>
+        <script src="index.js" charset="utf-8"></script>
+    </div>
+</body>
+</html>
